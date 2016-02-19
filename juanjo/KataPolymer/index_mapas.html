@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BBVA centros</title>
+	<script type="text/javascript" scr="bower_components/webcomponentsjs/webcomponents.js"></script>
+	<link rel="import"  href="bower_components/polymer/polymer.html">
+	<link rel="import"  href="bower_components/google-map/google-map.html">
+	
+	<style>
+	body{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	 google-map {
+    height: 600px;
+  }
+	</style>
+</head>
+<body class="fullbled layout vertical">
+
+	<google-map latitude="37.77493" longitude="-122.41942" fit-to-markers zoom=15>
+  		<google-map-marker latitude="40.5143669" longitude="-3.6738408" title="Tablas III">
+  		</google-map-marker>  	
+  		<google-map-marker latitude="40.5013959" longitude="-3.6670545" title="La Vela">
+  		</google-map-marker>  
+
+	</google-map>
+
+</body>
