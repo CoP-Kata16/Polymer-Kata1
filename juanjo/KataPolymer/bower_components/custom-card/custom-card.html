@@ -1,0 +1,35 @@
+<dom-module id="custom-card">
+
+	<link rel="stylesheet" type="text/css" href="custom-card.css">
+
+
+	<template>
+		<div>
+			<span>{{nombre}}</span>
+			<span>{{edad}}</span>
+		</div>
+
+	</template>
+
+</dom-module>
+
+<script>
+	
+Polymer({
+	is: 'custom-card',
+	properties:{
+		nombre: String,
+		edad: Number
+	},
+	ready: function(){		
+		this.mostrarConsola("custom-card funcionando");
+	},
+	mostrarConsola: function(mensaje){
+			console.log(mensaje);
+	}
+
+});
+
+
+
+</script>
